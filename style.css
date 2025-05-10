@@ -16,7 +16,12 @@ body {
 }
 
 #img1 {
+    float: initial;
     transition: transform 0.3s ease-in-out;
+    border-radius: 50px;
+    border-style: dashed;
+    border-color: green;
+    margin-right: 20px;
 }
 #img1:hover {
     animation: wobble 0.5s infinite;
@@ -28,4 +33,28 @@ body {
     50% {transform: rotate(-3deg);}
     75% {transform: rotate(2deg);}
     100% {transform: rotate(0deg);}
+}
+
+.robux_indicator {
+    float: left;
+    width: 15%;
+}
+
+#arrow2 {
+    transform: rotate(180deg);
+}
+
+#freerobux {
+    animation: wobble 1s infinite;
+    margin-bottom: 10px;
+    float: initial;
+    border-style: dashed;
+    border-color: darkgreen;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: rgb(92, 138, 61);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
 }
