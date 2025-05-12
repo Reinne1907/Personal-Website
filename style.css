@@ -13,6 +13,11 @@ body {
     border: none;
     background-color: rgb(92, 138, 61);
     color: white;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
 }
 #cat_under {
     color: rgb(189, 1, 1);
@@ -50,12 +55,16 @@ body {
     width: 15%;
 }
 
+.arrow {
+    position: relative;
+    top: 30px;
+}
 #arrow2 {
     transform: rotate(180deg);
 }
 
 #freerobux {
-    animation: wobble 1s infinite;
+    animation: wobble 1.2s infinite;
     margin-bottom: 10px;
     float: initial;
     border-style: dashed;
@@ -80,4 +89,14 @@ body {
     color: white;
     font-size: 16px;
     cursor: pointer;
+}
+
+#goof {
+    border-style: dashed;
+    border-color: green;
+    width: 100px;
+    float: left;
+    border-radius: 19px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
